@@ -27,7 +27,7 @@ errMsg += "Con";
 errMsg += "stmt";
 	
 				// This is the JDBC statment / command :
-				// SELECT: get
+				// SELECT -> get
 				// time -> column 1 in my database
 				// event -> column 2 in my database
 				// FROM -> define which table in the database
@@ -36,10 +36,10 @@ errMsg += "stmt";
 				String query_stmt = "SELECT time, event FROM events"+ 
 					" ORDER BY time DESC";
 				
-				// Run the statment / command 
+				// Run / execute the statment / command 
 				ResultSet rs = stmt.executeQuery(query_stmt);
 				
-				// Tell java where "out" prints to 
+				// Tell java where "out" prints to (we want it to HTML not system)
 				PrintWriter out = response.getWriter(); 
 				
 				// Start HTML header
@@ -58,7 +58,7 @@ errMsg += "stmt";
 				
 					// Print data to HTML
 					out.println("<li><b>Time</b>: " + field1 + "\n" +
-									"<b>Event</b>:" + field2 + "\n");
+							"<b>Event</b>:" + field2 + "\n");
 				}
 				// Close HTML
 				out.println("</ul>\n" +
