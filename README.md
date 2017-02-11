@@ -7,6 +7,7 @@ A mini java server to access MS Access database through web gui
 - Java sdk1.8 to compile
 
 Instructions:
+- Copy "Database2.accdb" to C://Temp/
 - Copy "web.xml" to webapps/midp/WEB-INF/
 - Copy "entries.java" to webapps/midp/WEB-INF/classes/
 - Complile "entries.java" with /lib/servlet-api.jar
