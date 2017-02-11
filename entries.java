@@ -7,9 +7,6 @@ import java.io.*;
 public class entries extends HttpServlet {
   private int mCount;
   
-  
-  
-  // NO POST METHOD FOR THIS JAVA CLASS. THIS CLASS FILE IS PURELY FOR RETRIEVING DATA
   // MAIN GET METHOD (Runs when you open the site)
   public void doGet(HttpServletRequest request,
       HttpServletResponse response)
