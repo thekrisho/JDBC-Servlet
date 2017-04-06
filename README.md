@@ -14,4 +14,8 @@ Instructions:
 - Restart Tomcat
 
 
+Compile Example (Your compile script should look something like this):
+
+javac -classpath .;"C:\Program Files\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar" "C:\Program Files\Apache Software Foundation\Tomcat 9.0\webapps\midp\WEB-INF\classes\entries1.java"
+
 
